@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { NavRoute } from "./NavRoute";
 
 const StyledNavRoutes = styled.div`
   display: flex;
@@ -12,11 +11,11 @@ const StyledNavRoutes = styled.div`
 function NavRoutes() {
   return (
     <StyledNavRoutes>
-      <NavRoute href="/">Услуги</NavRoute>
-      <NavRoute href="/">Виджеты</NavRoute>
-      <NavRoute href="/">Интеграции</NavRoute>
-      <NavRoute href="/">Кейсы</NavRoute>
-      <NavRoute href="/">Сертификаты</NavRoute>
+      <a href="/">Услуги</a>
+      <a href="/">Виджеты</a>
+      <a href="/">Интеграции</a>
+      <a href="/">Кейсы</a>
+      <a href="/">Сертификаты</a>
     </StyledNavRoutes>
   );
 }
