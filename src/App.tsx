@@ -23,6 +23,7 @@ const AppWrapper = styled.div`
   margin: auto;
   align-items: center;
   max-width: 1140px;
+  padding-top: 2.875rem;
 `;
 
 function App() {
