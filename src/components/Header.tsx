@@ -13,6 +13,7 @@ const StyledHeader = styled.header`
 
 const StyledNav = styled.nav`
   display: flex;
+  gap: 3.25rem;
 `;
 
 function Header() {

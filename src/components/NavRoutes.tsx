@@ -3,7 +3,7 @@ import { NavRoute } from "./NavRoute";
 
 const StyledNavRoutes = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 1.875rem;
   font-weight: 500;
   align-items: center;
