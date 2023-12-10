@@ -4,11 +4,13 @@ import TelegramIcon from "../icons/TelegramIcon";
 import ViberIcon from "../icons/ViberIcon";
 import WhatsappIcon from "../icons/WhatsappIcon";
 import { SocialLink } from "./SocialLink";
+import { hideMedia } from "../styles/hideMedia";
 
 const StyledSocialLinks = styled.div`
   display: flex;
   gap: 1.88rem;
   align-items: center;
+  ${hideMedia}
 `;
 
 function SocialLinks() {

@@ -2,8 +2,15 @@ import styled from "styled-components";
 import Logo from "../Logo";
 import { Contacts } from "./Contacts";
 import { NavRoutes } from "./NavRoutes";
+import { BrandDescription } from "./BrandDescription";
 
-const StyledHeader = styled.header`
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+`;
+
+const StyledHeader = styled.nav`
   background-color: transparent;
   display: flex;
   justify-content: space-between;
@@ -12,22 +19,35 @@ const StyledHeader = styled.header`
   font-weight: 500;
   font-size: 1rem;
   line-height: normal;
+  gap: 0.5rem;
+  margin-top: 2.875rem;
+  @media (max-width: 1024px) {
+    margin: 0rem;
+
+    background-color: #0e1014;
+  }
 `;
 
-const StyledNav = styled.nav`
+const StyledNav = styled.div`
   display: flex;
+  align-items: center;
+
   gap: 3.25rem;
+  width: 100%;
 `;
 
 function Header() {
   return (
-    <StyledHeader>
-      <StyledNav>
-        <Logo />
-        <NavRoutes />
-      </StyledNav>
-      <Contacts />
-    </StyledHeader>
+    <Wrapper>
+      <StyledHeader>
+        <StyledNav>
+          <Logo />
+          <NavRoutes />
+        </StyledNav>
+        <Contacts />
+      </StyledHeader>
+      <BrandDescription />
+    </Wrapper>
   );
 }
 

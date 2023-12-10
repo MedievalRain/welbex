@@ -15,15 +15,12 @@ const StyledApp = styled.div`
 `;
 
 const AppWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   color: #e4e5ea;
   margin: auto;
   align-items: center;
   max-width: calc(1140px + 2rem);
-  padding-top: 2.875rem;
   padding-left: 1rem;
   padding-right: 1rem;
 `;

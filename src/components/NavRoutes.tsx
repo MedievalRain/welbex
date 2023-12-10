@@ -1,20 +1,29 @@
 import styled from "styled-components";
+import { NavRoute } from "./NavRoute";
 
 const StyledNavRoutes = styled.div`
   display: flex;
-  justify-content: start;
   gap: 1.875rem;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    height: 55px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0px;
+  }
 `;
 
 function NavRoutes() {
   return (
     <StyledNavRoutes>
-      <a href="/">Услуги</a>
-      <a href="/">Виджеты</a>
-      <a href="/">Интеграции</a>
-      <a href="/">Кейсы</a>
-      <a href="/">Сертификаты</a>
+      <NavRoute href="/">Услуги</NavRoute>
+      <NavRoute href="/">Виджеты</NavRoute>
+      <NavRoute href="/">Интеграции</NavRoute>
+      <NavRoute href="/">Кейсы</NavRoute>
+      <NavRoute hideOnSmallScreen href="/">
+        Сертификаты
+      </NavRoute>
     </StyledNavRoutes>
   );
 }

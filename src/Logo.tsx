@@ -1,8 +1,16 @@
+import styled from "styled-components";
+
+const StyledLogo = styled.svg`
+  width: 140px;
+  height: 24px;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+`;
+
 function Logo() {
   return (
-    <svg
-      width="140"
-      height="24"
+    <StyledLogo
       viewBox="0 0 140 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +44,7 @@ function Logo() {
           <rect width="35" height="24" fill="white" />
         </clipPath>
       </defs>
-    </svg>
+    </StyledLogo>
   );
 }
 
