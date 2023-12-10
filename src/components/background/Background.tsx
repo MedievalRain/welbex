@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { BackgroundLight } from "./BackgroundLight";
+import { BackgroundBigRedBall } from "./balls/BackgroundBigRedBall";
+import BackgroundSmallRedBall from "./balls/BackgroundSmallRedBall";
 
 const StyledBackground = styled.div`
   position: fixed;
@@ -15,6 +17,8 @@ function Background() {
     <StyledBackground>
       <BackgroundLight color="#961A1A" size={311} left={"-102px"} top={"25%"} />
       <BackgroundLight color="#833AB4" size={259} left={"41%"} top={"-154px"} />
+      <BackgroundSmallRedBall />
+      <BackgroundBigRedBall />
     </StyledBackground>
   );
 }
