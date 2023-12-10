@@ -3,6 +3,7 @@ import { Content } from "./components/content/Content";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/header/Header";
 import { ResetStyles } from "./styles/ResetStyle";
+import { Background } from "./components/background/Background";
 
 const StyledApp = styled.div`
   background-color: #0e1014;
@@ -30,6 +31,7 @@ function App() {
     <>
       <ResetStyles />
       <StyledApp>
+        <Background />
         <AppWrapper>
           <Header />
           <Content />
