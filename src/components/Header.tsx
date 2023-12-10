@@ -9,6 +9,9 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: normal;
 `;
 
 const StyledNav = styled.nav`
