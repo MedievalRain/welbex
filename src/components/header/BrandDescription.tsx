@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { hideMedia } from "../styles/hideMedia";
+import { hideMedia } from "../../styles/hideMedia";
 
 const StyledBrandDescription = styled.p`
   width: 140px;
