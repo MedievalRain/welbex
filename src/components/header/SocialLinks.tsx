@@ -3,7 +3,7 @@ import styled from "styled-components";
 import TelegramIcon from "../../icons/TelegramIcon";
 import ViberIcon from "../../icons/ViberIcon";
 import WhatsappIcon from "../../icons/WhatsappIcon";
-import { SocialLink } from "./SocialLink";
+import { SocialLink } from "../shared/SocialLink";
 import { hideMedia } from "../../styles/media";
 
 const StyledSocialLinks = styled.div`
