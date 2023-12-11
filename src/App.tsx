@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Content } from "./components/content/Content";
+import { ContentLayout } from "./components/content/ContentLayout";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/header/Header";
 import { ResetStyles } from "./styles/ResetStyle";
@@ -34,7 +34,7 @@ function App() {
         <Background />
         <AppWrapper>
           <Header />
-          <Content />
+          <ContentLayout />
           <Footer />
         </AppWrapper>
       </StyledApp>
