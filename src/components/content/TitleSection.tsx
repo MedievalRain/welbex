@@ -1,17 +1,12 @@
 import styled from "styled-components";
+import { gradientTextColor } from "../../styles/gradientTextColor";
 
 const StyledTitleSection = styled.section``;
 const Title = styled.h1`
   font-size: 3rem;
 `;
 const GradientTitle = styled.h1`
-  background: linear-gradient(
-    90deg,
-    rgba(252, 176, 69, 1) 0%,
-    rgba(255, 63, 120, 1) 100%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  ${gradientTextColor}
   font-size: 3rem;
   font-weight: 900;
 `;
