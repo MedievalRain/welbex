@@ -17,8 +17,8 @@ function PurpleBall() {
           cy="28"
           r="30"
           fill="url(#paint0_radial_0_14)"
-          fill-opacity="0.8"
-          shape-rendering="crispEdges"
+          fillOpacity="0.8"
+          shapeRendering="crispEdges"
         />
       </g>
       <defs>
@@ -29,9 +29,9 @@ function PurpleBall() {
           width="94"
           height="94"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
           <feComposite
             in2="SourceAlpha"
@@ -81,10 +81,10 @@ function PurpleBall() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(30.35 13.9) rotate(51.0412) scale(49.3828)"
         >
-          <stop stop-color="#ECD0FF" stop-opacity="0.8" />
-          <stop offset="0.596678" stop-color="#A15DCF" stop-opacity="0.3" />
-          <stop offset="0.785899" stop-color="#7631A4" stop-opacity="0.26" />
-          <stop offset="1" stop-color="#561880" stop-opacity="0.29" />
+          <stop stopColor="#ECD0FF" stopOpacity="0.8" />
+          <stop offset="0.596678" stopColor="#A15DCF" stopOpacity="0.3" />
+          <stop offset="0.785899" stopColor="#7631A4" stopOpacity="0.26" />
+          <stop offset="1" stopColor="#561880" stopOpacity="0.29" />
         </radialGradient>
       </defs>
     </StyledBall>

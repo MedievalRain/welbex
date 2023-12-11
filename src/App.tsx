@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ContentLayout } from "./components/content/ContentLayout";
-import { Footer } from "./components/Footer";
+
 import { Header } from "./components/header/Header";
 import { ResetStyles } from "./styles/ResetStyle";
 import { Background } from "./components/background/Background";
@@ -8,6 +8,7 @@ import {
   BreakpointContextProvider,
   useBreakpoint,
 } from "./hooks/useBreakpoint";
+import { Footer } from "./components/footer/Footer";
 
 const AppWrapper = styled.div`
   position: relative;

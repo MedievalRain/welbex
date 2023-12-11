@@ -4,13 +4,17 @@ import { Contacts } from "./Contacts";
 import { NavRoutes } from "./NavRoutes";
 import { BrandDescription } from "./BrandDescription";
 import { windowPadding } from "../../styles/windowPadding";
+import { useBreakpointContext } from "../../hooks/useBreakpoint";
 
 const Wrapper = styled.div`
   ${windowPadding}
   display: flex;
   flex-direction: column;
-  gap: 0.62rem;
   margin-bottom: 94px;
+  gap: 0.62rem;
+  @media (max-width: 1024px) {
+    margin-bottom: 0rem;
+  }
 `;
 
 const StyledHeader = styled.nav`
@@ -37,16 +41,23 @@ const StyledNav = styled.div`
 `;
 
 function Header() {
+  const breakpoint = useBreakpointContext();
   return (
     <Wrapper>
-      <StyledHeader>
-        <StyledNav>
-          <Logo />
-          <NavRoutes />
-        </StyledNav>
-        <Contacts />
-      </StyledHeader>
-      <BrandDescription />
+      {breakpoint === "big" ? (
+        <>
+          <StyledHeader>
+            <StyledNav>
+              <Logo />
+              <NavRoutes />
+            </StyledNav>
+            <Contacts />
+          </StyledHeader>
+          <BrandDescription />
+        </>
+      ) : (
+        <NavRoutes />
+      )}
     </Wrapper>
   );
 }

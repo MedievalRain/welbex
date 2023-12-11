@@ -3,14 +3,15 @@ import styled from "styled-components";
 import TelegramIcon from "../../icons/TelegramIcon";
 import ViberIcon from "../../icons/ViberIcon";
 import WhatsappIcon from "../../icons/WhatsappIcon";
-import { SocialLink } from "../shared/SocialLink";
-import { hideMedia } from "../../styles/media";
+import { SocialLink } from "./SocialLink";
 
 const StyledSocialLinks = styled.div`
   display: flex;
-  gap: 1.88rem;
+  gap: 0.25rem;
   align-items: center;
-  ${hideMedia}
+  width: 100%;
+  max-width: 100px;
+  justify-content: space-between;
 `;
 
 function SocialLinks() {

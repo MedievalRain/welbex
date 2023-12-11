@@ -33,7 +33,7 @@ function NoiseBackground() {
             height="140%"
             filterUnits="objectBoundingBox"
             primitiveUnits="userSpaceOnUse"
-            color-interpolation-filters="linearRGB"
+            colorInterpolationFilters="linearRGB"
           >
             <feTurbulence
               type="fractalNoise"
@@ -51,7 +51,7 @@ function NoiseBackground() {
               surfaceScale="18"
               specularConstant="0.6"
               specularExponent="20"
-              lighting-color="#9785af"
+              lightingColor="#9785af"
               x="0%"
               y="0%"
               width="100%"

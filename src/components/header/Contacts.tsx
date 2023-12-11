@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { Phone } from "../shared/PhoneLink";
-import { SocialLinks } from "./SocialLinks";
+import { SocialLinks } from "../shared/SocialLinks";
 import { useBreakpointContext } from "../../hooks/useBreakpoint";
 
 const StyledContacts = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 2.94rem;
+  justify-content: end;
   align-items: center;
+  width: 100%;
+  gap: 47px;
 `;
 
 function Contacts() {
@@ -15,7 +16,7 @@ function Contacts() {
   return (
     <StyledContacts>
       {breakpoint === "big" && <Phone />}
-      <SocialLinks />
+      {breakpoint === "big" && <SocialLinks />}
     </StyledContacts>
   );
 }
