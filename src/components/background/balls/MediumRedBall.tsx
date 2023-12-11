@@ -1,13 +1,13 @@
 import { StyledBall } from "./StyledBall";
 
-function BackgroundSmallRedBall() {
+function MediumRedBall() {
   return (
     <StyledBall
-      left="59%"
-      top="547px"
+      left="-20px"
+      top="320px"
       xmlns="http://www.w3.org/2000/svg"
-      width="62"
-      height="62"
+      width="128"
+      height="128"
       viewBox="0 0 62 62"
       fill="none"
     >
@@ -69,7 +69,7 @@ function BackgroundSmallRedBall() {
             result="shape"
           />
           <feGaussianBlur
-            stdDeviation="2.5"
+            stdDeviation="4.5"
             result="effect3_foregroundBlur_0_12"
           />
         </filter>
@@ -91,4 +91,4 @@ function BackgroundSmallRedBall() {
   );
 }
 
-export default BackgroundSmallRedBall;
+export default MediumRedBall;

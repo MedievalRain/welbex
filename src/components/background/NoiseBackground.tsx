@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { BackgroundLight } from "../background/BackgroundLight";
-import BackgroundMediumRedBall from "../background/balls/BackgroundMediumRedBall";
-import PurpleSmallBall from "../background/balls/PurpleSmallBall";
+import { BackgroundLight } from "./BackgroundLight";
+import MediumRedBall from "./balls/MediumRedBall";
+import PurpleSmallBall from "./balls/PurpleSmallBall";
 
 const StyledNoiseBackground = styled.div`
   position: absolute;
@@ -16,7 +16,7 @@ function NoiseBackground() {
     <StyledNoiseBackground>
       <BackgroundLight color="#961A1A" size={210} top="241px" left="-55px" />
       <BackgroundLight color="#833AB4" size={259} top="107px" left="90%" />
-      <BackgroundMediumRedBall />
+      <MediumRedBall />
       <PurpleSmallBall />
       <svg
         xmlns="http://www.w3.org/2000/svg"

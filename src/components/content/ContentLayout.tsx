@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { TitleSection } from "./TitleSection";
 import { DescriptionSection } from "./DescriptionSection";
-import { NoiseBackground } from "./NoiseBackground";
+import { NoiseBackground } from "../background/NoiseBackground";
 import {
   resizeBreakpoint,
   useBreakpointContext,

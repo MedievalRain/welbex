@@ -1,46 +1,33 @@
-import styled from "styled-components";
 import { StyledBall } from "./StyledBall";
 
-const BigBall = styled(StyledBall)`
-  fill: radial-gradient(
-    82.3% 82.3% at 27.25% 26.5%,
-    rgba(255, 208, 208, 0.54) 0%,
-    rgba(212, 93, 93, 0.26) 59.67%,
-    rgba(167, 49, 49, 0.25) 78.59%,
-    rgba(130, 25, 25, 0.25) 100%
-  );
-  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
-  backdrop-filter: blur(2px);
-`;
-
-function BackgroundBigRedBall() {
+function SmallRedBall() {
   return (
-    <BigBall
-      left="36%"
-      top="83px"
-      width="117"
-      height="117"
-      viewBox="0 0 117 117"
-      fill="none"
+    <StyledBall
+      left="59%"
+      top="547px"
       xmlns="http://www.w3.org/2000/svg"
+      width="62"
+      height="62"
+      viewBox="0 0 62 62"
+      fill="none"
     >
-      <g filter="url(#filter0_bd_0_13)">
+      <g filter="url(#filter0_bdf_0_12)">
         <circle
-          cx="55.5"
-          cy="52.5"
-          r="41.5"
-          fill="url(#paint0_radial_0_13)"
+          cx="28"
+          cy="25"
+          r="14"
+          fill="url(#paint0_radial_0_12)"
           fillOpacity="0.8"
           shapeRendering="crispEdges"
         />
       </g>
       <defs>
         <filter
-          id="filter0_bd_0_13"
+          id="filter0_bdf_0_12"
           x="0"
           y="0"
-          width="117"
-          height="117"
+          width="62"
+          height="62"
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -49,7 +36,7 @@ function BackgroundBigRedBall() {
           <feComposite
             in2="SourceAlpha"
             operator="in"
-            result="effect1_backgroundBlur_0_13"
+            result="effect1_backgroundBlur_0_12"
           />
           <feColorMatrix
             in="SourceAlpha"
@@ -61,7 +48,7 @@ function BackgroundBigRedBall() {
             radius="10"
             operator="erode"
             in="SourceAlpha"
-            result="effect2_dropShadow_0_13"
+            result="effect2_dropShadow_0_12"
           />
           <feOffset dx="3" dy="6" />
           <feGaussianBlur stdDeviation="13.5" />
@@ -72,32 +59,36 @@ function BackgroundBigRedBall() {
           />
           <feBlend
             mode="normal"
-            in2="effect1_backgroundBlur_0_13"
-            result="effect2_dropShadow_0_13"
+            in2="effect1_backgroundBlur_0_12"
+            result="effect2_dropShadow_0_12"
           />
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="effect2_dropShadow_0_13"
+            in2="effect2_dropShadow_0_12"
             result="shape"
+          />
+          <feGaussianBlur
+            stdDeviation="2.5"
+            result="effect3_foregroundBlur_0_12"
           />
         </filter>
         <radialGradient
-          id="paint0_radial_0_13"
+          id="paint0_radial_0_12"
           cx="0"
           cy="0"
           r="1"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(36.6175 32.995) rotate(51.0412) scale(68.3129)"
+          gradientTransform="translate(21.63 18.42) rotate(51.0412) scale(23.0453)"
         >
-          <stop stopColor="#FFD0D0" stopOpacity="0.67" />
-          <stop offset="0.596678" stopColor="#D45D5D" stopOpacity="0.33" />
-          <stop offset="0.785899" stopColor="#A73131" stopOpacity="0.31" />
-          <stop offset="1" stopColor="#821919" stopOpacity="0.31" />
+          <stop stopColor="#FFD0D0" stopOpacity="0.6" />
+          <stop offset="0.596678" stopColor="#D45D5D" stopOpacity="0.31" />
+          <stop offset="0.785899" stopColor="#A73131" stopOpacity="0.33" />
+          <stop offset="1" stopColor="#821919" stopOpacity="0.29" />
         </radialGradient>
       </defs>
-    </BigBall>
+    </StyledBall>
   );
 }
 
-export { BackgroundBigRedBall };
+export default SmallRedBall;

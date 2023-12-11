@@ -1,6 +1,6 @@
 import { BackgroundLight } from "./BackgroundLight";
-import { BackgroundBigRedBall } from "./balls/BackgroundBigRedBall";
-import BackgroundSmallRedBall from "./balls/BackgroundSmallRedBall";
+import { BigRedBall } from "./balls/BigRedBall";
+import SmallRedBall from "./balls/SmallRedBall";
 import PurpleBall from "./balls/PurpleBall";
 
 function Background() {
@@ -8,8 +8,8 @@ function Background() {
     <>
       <BackgroundLight color="#961A1A" size={311} left={"-102px"} top={"25%"} />
       <BackgroundLight color="#833AB4" size={259} left={"41%"} top={"-154px"} />
-      <BackgroundSmallRedBall />
-      <BackgroundBigRedBall />
+      <SmallRedBall />
+      <BigRedBall />
       <PurpleBall />
     </>
   );
