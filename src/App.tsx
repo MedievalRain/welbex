@@ -10,6 +10,7 @@ import {
 } from "./hooks/useBreakpoint";
 
 const AppWrapper = styled.div`
+  position: relative;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   color: #e4e5ea;
@@ -24,8 +25,8 @@ function App() {
     <>
       <ResetStyles />
       <BreakpointContextProvider value={breakpoint}>
-        {breakpoint === "big" && <Background />}
         <AppWrapper>
+          {breakpoint === "big" && <Background />}
           <Header />
           <ContentLayout />
           <Footer />
