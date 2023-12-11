@@ -6,4 +6,8 @@ export const PrimaryButton = styled.button`
   height: 61px;
   font-weight: 500;
   margin-left: auto;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: normal;
+  font-size: 1rem;
 `;

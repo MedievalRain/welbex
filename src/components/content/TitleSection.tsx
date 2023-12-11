@@ -4,11 +4,12 @@ import { resizeBreakpoint } from "../../hooks/useBreakpoint";
 
 const StyledTitleSection = styled.section`
   font-size: 3rem;
+  max-width: 362px;
+  line-height: normal;
   @media (max-width: ${resizeBreakpoint}px) {
     font-size: 2.25rem;
   }
 `;
-const Title = styled.h1``;
 
 const GradientTitle = styled.h1`
   ${gradientTextColor}
@@ -30,9 +31,7 @@ const DescriptionText = styled.p`
 function TitleSection() {
   return (
     <StyledTitleSection>
-      <Title>
-        Зарабатывайте <br /> больше
-      </Title>
+      <h1>Зарабатывайте больше</h1>
       <GradientTitle>с WELBEX</GradientTitle>{" "}
       <DescriptionText>Развиваем и контролируем продажи за вас</DescriptionText>
     </StyledTitleSection>

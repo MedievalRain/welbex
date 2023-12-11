@@ -10,7 +10,7 @@ const StyledFeaturesGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 31px;
+  gap: 30px;
 `;
 
 function FeaturesGrid() {

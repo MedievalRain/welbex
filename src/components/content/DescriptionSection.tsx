@@ -8,7 +8,7 @@ import {
 } from "../../hooks/useBreakpoint";
 
 const StyledDescriptionSection = styled.section`
-  width: 291px;
+  width: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
