@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Phone } from "./PhoneLink";
+import { Phone } from "../shared/PhoneLink";
 import { SocialLinks } from "./SocialLinks";
+import { useBreakpointContext } from "../../hooks/useBreakpoint";
 
 const StyledContacts = styled.div`
   display: flex;
@@ -10,9 +11,10 @@ const StyledContacts = styled.div`
 `;
 
 function Contacts() {
+  const breakpoint = useBreakpointContext();
   return (
     <StyledContacts>
-      <Phone />
+      {breakpoint === "big" && <Phone />}
       <SocialLinks />
     </StyledContacts>
   );
