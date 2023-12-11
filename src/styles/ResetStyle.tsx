@@ -48,5 +48,11 @@ a {
 text-decoration: none;
 color: currentColor;
 }
+button {
+    border: none;
+    cursor: pointer;
+    color: currentColor;
+    padding: 0;
+}
 
 `;
