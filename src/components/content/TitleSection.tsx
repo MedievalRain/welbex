@@ -1,21 +1,30 @@
 import styled from "styled-components";
 import { gradientTextColor } from "../../styles/gradientTextColor";
 
-const StyledTitleSection = styled.section``;
-const Title = styled.h1`
+const StyledTitleSection = styled.section`
   font-size: 3rem;
+  @media (max-width: 1024px) {
+    font-size: 2.25rem;
+  }
 `;
+const Title = styled.h1``;
+
 const GradientTitle = styled.h1`
   ${gradientTextColor}
-  font-size: 3rem;
   font-weight: 900;
+  margin-bottom: 30px;
+  @media (max-width: 1024px) {
+    margin-bottom: 15px;
+  }
 `;
 const DescriptionText = styled.p`
   width: 275px;
-  margin-top: 30px;
   font-family: Montserrat;
   font-size: 1.125rem;
   font-weight: 400;
+  @media (max-width: 1024px) {
+    width: 271px;
+  }
 `;
 function TitleSection() {
   return (

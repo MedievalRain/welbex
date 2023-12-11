@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { hideMedia } from "../../styles/hideMedia";
+import { hideMedia } from "../../styles/media";
 
 const StyledPhone = styled.a`
   white-space: nowrap;

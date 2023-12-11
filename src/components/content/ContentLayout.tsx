@@ -6,6 +6,11 @@ const StyledContentLayout = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 94px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 45px;
+    padding-top: 40px;
+  }
 `;
 
 function ContentLayout() {
