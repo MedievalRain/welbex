@@ -1,8 +1,21 @@
+import styled from "styled-components";
 import { StyledBall } from "./StyledBall";
+
+const BigBall = styled(StyledBall)`
+  fill: radial-gradient(
+    82.3% 82.3% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.54) 0%,
+    rgba(212, 93, 93, 0.26) 59.67%,
+    rgba(167, 49, 49, 0.25) 78.59%,
+    rgba(130, 25, 25, 0.25) 100%
+  );
+  filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+  backdrop-filter: blur(2px);
+`;
 
 function BackgroundBigRedBall() {
   return (
-    <StyledBall
+    <BigBall
       left="36%"
       top="83px"
       width="117"
@@ -83,7 +96,7 @@ function BackgroundBigRedBall() {
           <stop offset="1" stopColor="#821919" stopOpacity="0.31" />
         </radialGradient>
       </defs>
-    </StyledBall>
+    </BigBall>
   );
 }
 
