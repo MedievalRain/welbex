@@ -10,9 +10,11 @@ import { FooterContactsColumn } from "./FooterContactsColumn";
 const StyledFooterColumns = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-bottom: 33px;
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: 23px;
+    margin-bottom: 50px;
   }
 `;
 
