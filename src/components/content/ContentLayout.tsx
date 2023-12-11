@@ -1,17 +1,18 @@
 import styled from "styled-components";
 import { TitleSection } from "./TitleSection";
-import { DescriptionSecion } from "./DescriptionSecion";
+import { DescriptionSection } from "./DescriptionSection";
 
 const StyledContentLayout = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 94px;
 `;
 
 function ContentLayout() {
   return (
     <StyledContentLayout>
       <TitleSection />
-      <DescriptionSecion />
+      <DescriptionSection />
     </StyledContentLayout>
   );
 }
