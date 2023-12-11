@@ -17,6 +17,9 @@ const StyledContentLayout = styled.div`
   }
   margin-bottom: 124px;
   ${windowPadding}
+  @media (max-width: 1024px) {
+    margin-bottom: 35px;
+  }
 `;
 
 function ContentLayout() {
