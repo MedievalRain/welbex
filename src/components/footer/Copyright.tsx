@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { resizeBreakpoint } from "../../hooks/useBreakpoint";
 
 const StyledCopyright = styled.div`
   display: flex;
@@ -7,7 +8,7 @@ const StyledCopyright = styled.div`
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 400;
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     align-items: start;
   }
 `;

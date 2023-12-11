@@ -4,7 +4,10 @@ import { Contacts } from "./Contacts";
 import { NavRoutes } from "./NavRoutes";
 import { BrandDescription } from "./BrandDescription";
 import { windowPadding } from "../../styles/windowPadding";
-import { useBreakpointContext } from "../../hooks/useBreakpoint";
+import {
+  resizeBreakpoint,
+  useBreakpointContext,
+} from "../../hooks/useBreakpoint";
 
 const Wrapper = styled.div`
   ${windowPadding}
@@ -12,7 +15,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   margin-bottom: 94px;
   gap: 0.62rem;
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     margin-bottom: 0rem;
   }
 `;
@@ -28,7 +31,7 @@ const StyledHeader = styled.nav`
   line-height: normal;
   gap: 0.5rem;
   margin-top: 2.875rem;
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     margin: 0rem;
   }
 `;

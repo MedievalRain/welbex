@@ -3,9 +3,6 @@ import styled from "styled-components";
 const StyledLogo = styled.svg`
   width: 140px;
   height: 24px;
-  @media (max-width: 1024px) {
-    display: none;
-  }
 `;
 
 function Logo() {

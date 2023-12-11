@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { NavRoute } from "./NavRoute";
-import { useBreakpointContext } from "../../hooks/useBreakpoint";
-import { resizeBreakpoint } from "../../styles/media";
+import {
+  resizeBreakpoint,
+  useBreakpointContext,
+} from "../../hooks/useBreakpoint";
 
 const StyledNavRoutes = styled.div`
   display: flex;

@@ -2,14 +2,17 @@ import styled from "styled-components";
 import { TitleSection } from "./TitleSection";
 import { DescriptionSection } from "./DescriptionSection";
 import { NoiseBackground } from "./NoiseBackground";
-import { useBreakpointContext } from "../../hooks/useBreakpoint";
+import {
+  resizeBreakpoint,
+  useBreakpointContext,
+} from "../../hooks/useBreakpoint";
 import { windowPadding } from "../../styles/windowPadding";
 
 const StyledContentLayout = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     flex-direction: column;
     gap: 45px;
     padding-top: 40px;
@@ -17,7 +20,7 @@ const StyledContentLayout = styled.div`
   }
   margin-bottom: 124px;
   ${windowPadding}
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     margin-bottom: 35px;
   }
 `;

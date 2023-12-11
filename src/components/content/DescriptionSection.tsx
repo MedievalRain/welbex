@@ -2,14 +2,17 @@ import styled from "styled-components";
 import { FeaturesGrid } from "./FeaturesGrid";
 import { PrimaryButton } from "./PrimaryButton";
 import { SmallFeaturesGrid } from "./SmallFeaturesGrid";
-import { useBreakpointContext } from "../../hooks/useBreakpoint";
+import {
+  resizeBreakpoint,
+  useBreakpointContext,
+} from "../../hooks/useBreakpoint";
 
 const StyledDescriptionSection = styled.section`
   width: 291px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     align-items: start;
   }
 `;
@@ -22,7 +25,7 @@ const Title = styled.h2`
   font-weight: 500;
   line-height: normal;
   margin-bottom: 40px;
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     width: 271px;
     text-align: start;
   }
@@ -40,7 +43,7 @@ const HighlightedTitle = styled.h2`
   letter-spacing: 0.9px;
   text-transform: uppercase;
   width: max-content;
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     text-transform: none;
   }
 `;

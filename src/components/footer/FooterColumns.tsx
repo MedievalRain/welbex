@@ -6,12 +6,13 @@ import {
 } from "./FooterColumn";
 
 import { FooterContactsColumn } from "./FooterContactsColumn";
+import { resizeBreakpoint } from "../../hooks/useBreakpoint";
 
 const StyledFooterColumns = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 33px;
-  @media (max-width: 1024px) {
+  @media (max-width: ${resizeBreakpoint}px) {
     flex-direction: column;
     gap: 23px;
     margin-bottom: 50px;
