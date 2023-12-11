@@ -6,10 +6,11 @@ import { BrandDescription } from "./BrandDescription";
 import { windowPadding } from "../../styles/windowPadding";
 
 const Wrapper = styled.div`
+  ${windowPadding}
   display: flex;
   flex-direction: column;
   gap: 0.62rem;
-  ${windowPadding}
+  margin-bottom: 94px;
 `;
 
 const StyledHeader = styled.nav`

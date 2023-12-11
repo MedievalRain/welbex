@@ -9,13 +9,13 @@ const StyledContentLayout = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 94px;
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: 45px;
     padding-top: 40px;
     overflow: hidden;
   }
+  margin-bottom: 124px;
   ${windowPadding}
 `;
 
