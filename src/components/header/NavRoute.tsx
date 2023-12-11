@@ -1,6 +1,7 @@
 import { AnchorHTMLAttributes } from "react";
 import styled from "styled-components";
 import { hideMedia } from "../../styles/media";
+
 interface NavRouteProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   hideOnSmallScreen?: boolean;
 }

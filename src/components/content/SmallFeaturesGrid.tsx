@@ -6,7 +6,8 @@ const StyledSmallFeaturesGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 31px;
+  column-gap: 10px;
+  row-gap: 14px;
   padding-left: 20px;
 `;
 

@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { FeaturesGrid } from "./FeaturesGrid";
 import { PrimaryButton } from "./PrimaryButton";
-import { resizeBreakpoint } from "../../styles/media";
 import { SmallFeaturesGrid } from "./SmallFeaturesGrid";
-import { useWidth } from "../../hooks/useWidth";
+import { useBreakpointContext } from "../../hooks/useBreakpoint";
 
 const StyledDescriptionSection = styled.section`
   width: 291px;
@@ -47,16 +46,17 @@ const HighlightedTitle = styled.h2`
 `;
 
 function DescriptionSection() {
-  const width = useWidth();
-  const isScreenSmall = width > resizeBreakpoint;
+  const breakpoint = useBreakpointContext();
   return (
     <StyledDescriptionSection>
       <Title>
         Вместе с <HighlightedTitle>бесплатной</HighlightedTitle>{" "}
         <HighlightedTitle>консультацией</HighlightedTitle> мы дарим:
       </Title>
-      {isScreenSmall ? <FeaturesGrid /> : <SmallFeaturesGrid />}
-      {isScreenSmall && <PrimaryButton>Получить консультацию</PrimaryButton>}
+      {breakpoint === "big" ? <FeaturesGrid /> : <SmallFeaturesGrid />}
+      {breakpoint === "big" && (
+        <PrimaryButton>Получить консультацию</PrimaryButton>
+      )}
     </StyledDescriptionSection>
   );
 }

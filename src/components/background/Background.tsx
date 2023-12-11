@@ -3,7 +3,6 @@ import { BackgroundLight } from "./BackgroundLight";
 import { BackgroundBigRedBall } from "./balls/BackgroundBigRedBall";
 import BackgroundSmallRedBall from "./balls/BackgroundSmallRedBall";
 import PurpleBall from "./balls/PurpleBall";
-import { hideMedia } from "../../styles/media";
 
 const StyledBackground = styled.div`
   position: fixed;
@@ -12,7 +11,6 @@ const StyledBackground = styled.div`
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  ${hideMedia}
 `;
 
 function Background() {

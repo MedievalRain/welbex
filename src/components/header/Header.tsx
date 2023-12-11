@@ -3,11 +3,13 @@ import Logo from "../../Logo";
 import { Contacts } from "./Contacts";
 import { NavRoutes } from "./NavRoutes";
 import { BrandDescription } from "./BrandDescription";
+import { windowPadding } from "../../styles/windowPadding";
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.62rem;
+  ${windowPadding}
 `;
 
 const StyledHeader = styled.nav`
@@ -23,15 +25,12 @@ const StyledHeader = styled.nav`
   margin-top: 2.875rem;
   @media (max-width: 1024px) {
     margin: 0rem;
-
-    background-color: #0e1014;
   }
 `;
 
 const StyledNav = styled.div`
   display: flex;
   align-items: center;
-
   gap: 3.25rem;
   width: 100%;
 `;
