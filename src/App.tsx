@@ -12,8 +12,7 @@ import { Footer } from "./components/footer/Footer";
 
 const AppWrapper = styled.div`
   position: relative;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   color: #e4e5ea;
   margin: auto;
   align-items: center;

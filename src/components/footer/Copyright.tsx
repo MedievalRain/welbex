@@ -5,7 +5,7 @@ const StyledCopyright = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 400;
   @media (max-width: ${resizeBreakpoint}px) {

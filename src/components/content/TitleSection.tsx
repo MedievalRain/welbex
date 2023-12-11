@@ -20,7 +20,7 @@ const GradientTitle = styled.h1`
 `;
 const DescriptionText = styled.p`
   width: 275px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   @media (max-width: ${resizeBreakpoint}px) {

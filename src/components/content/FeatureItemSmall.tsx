@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FeatureItemSmall = styled.h3`
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;

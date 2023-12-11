@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledBrandDescription = styled.p`
   width: 140px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.625rem;
   font-weight: 300;
 `;

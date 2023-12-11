@@ -15,7 +15,7 @@ export const FeatureTitle = styled.h3`
 `;
 
 export const FeatureDescription = styled.p`
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
 `;
